@@ -4,6 +4,7 @@ An Asset management program made in python
 
 ## TO DO
 1. Make UI for main
+  - table select function
 2. finish login functions
   - login buton
 3. make ui for adding records
