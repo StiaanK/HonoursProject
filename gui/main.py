@@ -43,14 +43,11 @@ class App(customtkinter.CTk):
             self.grid_columnconfigure(0, weight=1)
             self.grid_columnconfigure(1, weight=1)
             self.grid_columnconfigure(2, weight=1)
-            self.grid_rowconfigure(2,weight=2)
+            #self.grid_rowconfigure(2,weight=2)
 
 
-login.login()
+login.loginOpend()
 app = App()
-#lblYeet = customtkinter.CTkLabel(app, text="yeet")
-#lblYeet.grid(row=0,column=1,padx=10, pady=10)
-#customtkinter.CTkButton(app, text="Press me!", command=show_info).grid(row=0,column=2,padx=10, pady=10)
 cnvTest = customtkinter.CTkCanvas(app, width=50,height=40)
 pt = Table(cnvTest)
 btnShow=customtkinter.CTkButton(app, text="Show", command=show_data)
