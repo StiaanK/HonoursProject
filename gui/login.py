@@ -14,7 +14,10 @@ def cancel():
     response = msg.get()
     if response=="Yes":
         app.destroy()       
-   
+
+#Work in progress
+def login():   
+    app.destroy()
 
 class App(customtkinter.CTk):
     def __init__(self):
@@ -37,7 +40,7 @@ lblPass = customtkinter.CTkLabel(app, text="Password:",).grid(row=2,column=0, pa
 entUser = customtkinter.CTkEntry(app,width=200).grid(row=1,column=1, padx=10,pady=10,sticky="w",columnspan=2)
 entPass = customtkinter.CTkEntry(app,width=200, show="*").grid(row=2,column=1, padx=10,pady=10,sticky="w",columnspan=2)
 #butons
-btnLogin = customtkinter.CTkButton(app, text="Login").grid(row=3,column=0, padx=10,pady=10,sticky="w")
+btnLogin = customtkinter.CTkButton(app, text="Login",command=login).grid(row=3,column=0, padx=10,pady=10,sticky="w")
 btnCancel = customtkinter.CTkButton(app, text="Cancel",command=cancel).grid(row=3,column=1, padx=10,pady=10,sticky="e")
 
 
