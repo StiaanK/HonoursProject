@@ -41,7 +41,8 @@ btnLogin = customtkinter.CTkButton(app, text="Login").grid(row=3,column=0, padx=
 btnCancel = customtkinter.CTkButton(app, text="Cancel",command=cancel).grid(row=3,column=1, padx=10,pady=10,sticky="e")
 
 
-def login():
+def loginOpen():
     app.mainloop()
 
-login()
+#for testing
+#login()
