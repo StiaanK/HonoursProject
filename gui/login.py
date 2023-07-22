@@ -2,6 +2,7 @@ import tkinter
 from typing import Optional, Tuple, Union
 import customtkinter
 from CTkMessagebox import CTkMessagebox
+import main
 
 
 # System Settings
@@ -17,7 +18,9 @@ def cancel():
 
 #Work in progress
 def login():   
+    main.returnMain()
     app.destroy()
+    
 
 class App(customtkinter.CTk):
     def __init__(self):
@@ -44,8 +47,8 @@ btnLogin = customtkinter.CTkButton(app, text="Login",command=login).grid(row=3,c
 btnCancel = customtkinter.CTkButton(app, text="Cancel",command=cancel).grid(row=3,column=1, padx=10,pady=10,sticky="e")
 
 
-def loginOpen():
+def open():
     app.mainloop()
 
 #for testing
-#login()
+open()
